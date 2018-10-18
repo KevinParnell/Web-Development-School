@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML file with CSS styling</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="externalcss.css">
+    <style type="text/css">
+        body {
+            background-image: url(http://www.gibsonr.com/classes/images/ircclogo.gif);
+            background-position: top;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            margin-top: 120px;
+        }
+
+        h1 {
+            border: 5px ridge red;
+            border-left-color: blue;
+            padding-left: 5px;
+        }
+
+        p {
+            background-color: lightblue;
+        }
+
+        #P1 {
+            font-size: 1.5em;
+        }
+
+        #HERE {
+            background-color: lightgreen;
+        }
+
+        .nothing {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Practice</h1>
+
+    <p id="HERE">Body text.</p>
+    <p>More <span id="P1">words</span>.</p>
+    <p><span id="P2">Second</span> paragraph with more words.</p>
+    <p>Third paragraph with more words.</p>
+    <ul>
+        <li>One</li>
+        <li class="nothing">Two</li>
+        <li>Three</li>
+    </ul>
+</body>
+
+</html>

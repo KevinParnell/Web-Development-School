@@ -1,0 +1,67 @@
+/*
+Filename: m4a1.css
+By: Kevin Parnell
+Created: 10/17/2018
+Last Edited: 10/17/2018
+*/
+
+h1 {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    text-align: left;
+}
+
+h4 {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    text-align: center;
+}
+
+h5 {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    text-align: left;
+}
+
+h6 {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    text-align: left;
+}
+
+body {
+    font-family: Arial, Calibri, 'Courier New', sans-serif;
+    background-image: url(http://www.gibsonr.com/classes/images/ircclogo.gif);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    margin-top: 120px;
+    background-color: yellow;
+}
+
+a:link {
+    color: green;
+    text-decoration: overline;
+}
+
+a:visited {
+    color: red;
+    text-decoration: overline;
+}
+
+a:hover {
+    color: blue;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+a:active {
+    color: blue;
+    text-decoration: overline;
+}

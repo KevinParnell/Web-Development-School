@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Exercise C Lesson 1 Page</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style='text-align:center;'>
+        <img src='../images/irsclogo.png' alt='IRSC Logo' width='100' height='69'>
+        <h1>Exercise C Lesson 1 Page</h1>
+    </div>
+    <hr>
+    <h2><a name="SEC1">Section 1 - Navigation to each lesson</a></h2>
+    <!-- the h2 element above contains a named anchor - described in Section 4 below -->
+    <p>This is the index (home) page for &quot;Lesson 1&quot; of Exercise C. It acts as an access point for all pages
+        related to that lesson. Each folder on a website <em>can</em> have an HTML file named <code>index.htm</code>
+        (or <code>.html</code>). The name of this &quot;home page&quot; file depends on the configuration settings of
+        the web server hosting the site. That file acts as a table of contents and link launching point for other files
+        in that folder (or other locations if needed). If this page was stored on a website at the web address <code>http://www.host.net/exercise_c/lesson1/index.html</code>,
+        most servers would serve up this page even if the user typed only the URL <code>http://www.host.net/exercise_c/lesson1/</code>
+        leaving off the filename. Note that it is best practice to include the slash following the final folder label (<code>lesson1</code>
+        in this example) to indicate that it is a folder name. Most servers will allow this slash to be omitted.</p>
+    <hr>
+    <h2 id="SEC2">Section 2 - How to link back to the home page</h2>
+    <p>The home image at the bottom of this page is nested inside of an HTML anchor element to allow it to server as a
+        link back to the home page of Exercise C. Notice that there is no border around the image. This is accomplished
+        by embedding a CSS style declaration in the img tag to supress the border. View the source code for this page
+        to see this. Also notice the use of the <code>..</code> &quot;parent folder&quot; reference used in the href
+        attribute of the anchor tag to ensure that it links to the home page for Exercise C (in the parent folder)
+        rather than the home page for the current folder (this file).</p>
+    <hr>
+    <h2 id="SEC3">Section 3 - How to link to other lessons on this site.</h2>
+    <p>Websites often contain many separate related pages.
+        Often, these are meant to be read in a specific order. So it is helpful to provide links on each page to both
+        the next and previous page in the sequence. In the case of the example site in this exercise (which contains a
+        very small sequence of only two lesson pages) this page contains only one link -
+        to the other (next) lesson. To reach Lesson 2, the relative href would be: <a href='../lesson2/index.html'><code>../lesson2/index.html</code></a></p>
+    <p>On that page, you will see an example of a link that returns to this (its
+        previous) page.</p>
+    <hr>
+    <h2 id="SEC4">Section 4 - How to link to a &quot;named anchor&quot; position on this site.</h2>
+    <p>The Exercise C Home Page contains a list of links to the other lesson pages
+        on this site. In some cases, a web page might be so long, that it is useful to create named positions within
+        that page that can serve as termination points for links from other pages to allow readers to jump to specific
+        places within the content without having to start at the top of the page and scroll down until the desired
+        content is located. Positions such as these are called &quot;named anchors&quot;. This document contains four
+        of them, one located
+        at the position of each h2 element on the page. Examine the source code for the h2 heading for Section 1 and
+        you will see that it contains a named anchor of SEC1 coded using the &quot;name&quot; attribute of an anchor
+        (a) tag. This special type of anchor element serves as the terminal point for a link that
+        was initiated elsewhere. You can find the originating anchor for this link on the index page for Exercise C
+        labeled &quot;Section 1 - Navigation to each lesson&quot;.</p>
+    <p>Examine the source code for the h2 heading for the other sections and you will see that their heading elements
+        have been assigned an &quot;id&quot; attribute instead of using an anchor (a) tag. Both coding methods still
+        work. But the use of the &quot;id&quot; attribute is now the preferred method because its coding is simpler.
+        Regardless of the method used to code the named anchor, the coding of the href attribute within the originating
+        anchor is the same. (See the section links on the index page for Exercise C.)</p>
+    <hr>
+    <div style='text-align:center;'>
+        <a href='../index.html'>
+            <img src='../images/home.gif' alt='Image of a house' style='width:43px; height:21px; border-style:none;'>
+        </a>
+    </div>
+    <hr>
+    <table style='width:100%;border-style:none;'>
+        <tr>
+            <td style='text-align:left'>Last Revised: 3 February 2017</td>
+            <td style='text-align:right'><a href='../copyright.html'>&copy; 2017 by Pseudo
+                    Student</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
