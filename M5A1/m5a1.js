@@ -10,20 +10,18 @@ var TV; // test value acquired from user
 var DD; // division denominator
 var HITS; // quantity of successful integer divisions
 
-UI = parseInt(prompt("Enter a whole number to test as a prime number:"));
-TV = UI;
-DD = 2;
+UI = window.prompt("Enter a whole number to test as a prime number:");
+TV = parseInt(UI, 10);
+DD = TV;
 HITS = 0;
 
-while (DD < TV) {
+while (DD > 0) {
     if (TV % DD == 0) {
-        HITS = 1;
-        break;
+        HITS++;
     }
-    DD = DD + 1;
+    DD--;
 }
-if (HITS == 0) {
-    document.write(TV + " is a prime number.");
-} else {
-    document.write(TV + " is not a prime number.");
-}
+
+document.write("<p>" + UI + " is");
+if (TV <= 1 || HITS > 2) document.write(" not");
+document.write(" a prime number." + "</p>");
