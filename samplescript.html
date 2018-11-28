@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sample Script</title>
+    <meta charset="UTF-8">
+
+    <style>
+        #P1 {
+            max-width: 12em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="P1" onclick="replace()">Click me senpai UwU</div>
+
+    <script>
+        function replace() {
+            var x;
+            x = "<ul><li>O</li>";
+            x += "<li>w</li>";
+            x += "<li>O</li></ul>";
+            var y = document.getElementById("P1");
+            y.innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>

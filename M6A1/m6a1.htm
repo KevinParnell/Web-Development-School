@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sample Script</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="m6a1.css">
+    <style type="text/css"></style>
+    <script type="text/javascript" src="m6a1.js"></script>
+    <!--
+        Filename: m6a1.htm
+        By: Kevin Parnell
+        Created: 11/14/2018
+        Last Edited: 11/15/2018
+    -->
+</head>
+
+<body>
+    <nav>
+        <ul id="nav">
+            <li onclick="browser()"><a href="#">Browser Test</a></li>
+            <li onclick="htmlDetection()"><a href="#">HTML Feature Test</a></li>
+            <li><a href="#">Mobile Tests</a>
+                <ul>
+                    <li onclick="widthandheight()"><a href="#">Screen Resolution</a></li>
+                    <li onclick="orientation()"><a href="#">Screen Orientation</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Canvas Tests</a>
+                <ul>
+                    <li onclick="canvasSupport()"><a href="#">General Support</a></li>
+                    <li onclick="canvasTextSupport()"><a href="#">Text Support</a></li>
+                    <li onclick="canvasImageSupport()"><a href="#">Draw Canvas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="heading">Click a menu item above to test various web features</h1>
+
+    <div id="output"></div>
+
+    <canvas id="myCanvas" width="0" height="0"></canvas>
+
+    <!-- in case browser has trouble loading the image in the javascript canvas -->
+    <div style="display:none;width:100%; height:100%;"><img src="numale.png" alt="numale"></div>
+
+</body>
+
+</html>
